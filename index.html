@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Task-01 | Responsive Landing Page</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo">Prodigy<span>.</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact" class="nav-cta">Contact Us</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="orb orb1"></div>
+    <div class="orb orb2"></div>
+    <div class="hero-content">
+      <div class="hero-badge"><span class="dot"></span> Task-01 · Prodigy InfoTech</div>
+      <h1>Responsive<br><span class="highlight">Landing Page</span><br>with Smart Nav</h1>
+      <p class="hero-desc">An interactive navigation menu that changes color and style on scroll and hover — fixed, always visible, crafted with HTML, CSS & JavaScript.</p>
+      <div class="hero-actions">
+        <a href="#features" class="btn-primary">Explore Features</a>
+        <a href="#contact" class="btn-secondary">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features">
+    <p class="section-label">What's Inside</p>
+    <h2 class="section-title">Core Features</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">🎨</div>
+        <h3>Color-Changing Nav</h3>
+        <p>Navbar transitions from transparent to frosted-glass dark background on scroll.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">✨</div>
+        <h3>Hover Animations</h3>
+        <p>Each menu item reveals an animated underline on hover with smooth CSS transitions.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📱</div>
+        <h3>Fully Responsive</h3>
+        <p>Hamburger menu on mobile, fluid grids, and clamp() typography for every screen.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📊</div>
+        <h3>Scroll Progress Bar</h3>
+        <p>A thin gradient bar at the top tracks reading progress as you scroll.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔒</div>
+        <h3>Fixed Position</h3>
+        <p>Navigation stays pinned to the top at all times for constant accessibility.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">⚡</div>
+        <h3>Vanilla JS Only</h3>
+        <p>No libraries — just clean scroll and click event listeners for all interactivity.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about-inner">
+      <div class="about-text">
+        <p class="section-label" style="text-align:left;">About the Task</p>
+        <h2>Built for Prodigy InfoTech Internship</h2>
+        <p>Task-01 demonstrates mastery of semantic HTML, CSS custom properties, transitions, and vanilla JavaScript DOM manipulation.</p>
+        <p>The navbar uses a scroll event listener to toggle a <code>.scrolled</code> class, triggering all visual changes via CSS — keeping logic and presentation cleanly separated.</p>
+      </div>
+      <div class="about-visual">
+        <div class="stat-row"><span class="stat-label">Technologies</span><span class="stat-value">HTML · CSS · JS</span></div>
+        <div class="stat-row"><span class="stat-label">Libraries</span><span class="stat-value">None</span></div>
+        <div class="stat-row"><span class="stat-label">Nav Position</span><span class="stat-value">Fixed</span></div>
+        <div class="stat-row"><span class="stat-label">Scroll Detection</span><span class="stat-value">window.scrollY</span></div>
+        <div class="stat-row"><span class="stat-label">Mobile Menu</span><span class="stat-value">Hamburger Toggle</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <p class="section-label">Reach Out</p>
+    <h2 class="section-title">Get in Touch</h2>
+    <p>Have questions or feedback? Drop a message below.</p>
+    <div class="contact-form">
+      <input type="text" placeholder="Your Name" />
+      <input type="email" placeholder="Your Email" />
+      <textarea rows="4" placeholder="Your Message..."></textarea>
+      <button type="button">Send Message →</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Prodigy InfoTech · Task-01 · Responsive Landing Page</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
